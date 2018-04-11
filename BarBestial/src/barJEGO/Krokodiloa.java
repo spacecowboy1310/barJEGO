@@ -3,7 +3,7 @@ package barJEGO;
 public class Krokodiloa extends Karta{
 
 	public Krokodiloa(int pId,int pKolorea) {
-		super("Krokodiloaa",pId,pKolorea,(""),true,10,new AurreratuBat(),null,new KaleratuJan());
+		super("Krokodiloa",pId,pKolorea,(""),true,10,new AurreratuBat(),null,new KaleratuJan());
 	}
 	
 	public void animalada(){
