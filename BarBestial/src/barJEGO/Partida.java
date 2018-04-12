@@ -6,16 +6,29 @@ public class Partida {
 	private JokalariPerts jokalaria;
 	private JokalariIA ia;
 	private Tablero tablero;
-	
+	boolean txanda=true;
+
 
 	
 	private Partida(){
-		
 		jokalaria= new JokalariPerts("Oier",7);
 		ia= new JokalariIA("CPU",2);
 		tablero= new Tablero();
 		
 	}
+	
+	
+	//Txanden kudeaketa:
+		public void txandaPasa() {
+			this.txanda=false;
+			this.ia.txandaEgin();
+			
+		}
+	
+	
+	
+	
+	
 	
 	/* Interfaceari laguntzeko get-errak*/
 	
@@ -62,5 +75,6 @@ public class Partida {
 		return partida;
 		
 	}
-
+    
+	
 }

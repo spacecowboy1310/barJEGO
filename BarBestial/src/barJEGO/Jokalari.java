@@ -32,7 +32,9 @@ public abstract class Jokalari {
 		return nireMazo.tamainaMazo();
 	}
 	
-	
+	public void txandaPasa(){
+		Partida.getPartida().txandaPasa();
+	}
 	public void KartaHartuMazotik() {
 		
 		Karta k=nireMazo.kartaEman();
